@@ -11,16 +11,44 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="font-mono text-lg text-white antialiased bg-gray-800">
-    <header>
-        <h1>NathanPayne.dev</h1>
-        <nav>
-            <ul>
-                <li><a href="">about</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">contact</a></li>
+<body class="font-mono text-lg text-cloud antialiased bg-dark">
+    
+    <header class="border-b-1 border-sky sm:flex sm:justify-between sm:text-xl xl:text-xl">
+        <div class="tracking-wider flex justify-between items-center px-6 py-4 sm:px-8 md:ml-20">
+            <div id="logo" class="flex flex-col leading-none">
+                <span>nathan</span> <span>payne</span> <span class="mt-1 self-end text-xs uppercase">.dev</span>
+            </div>
+            <div id="menu-icon" class="sm:hidden">
+                <button class="text-gray-500 hover:text-white focus:text-white focus:outline-none"
+                    aria-label="Toggle Navigation Menu">
+                    <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path id="cross" class="hover:text-fire transition-all duration-700 ease-in-out hidden"
+                            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+                        <path id="ham" class="transition-all duration-700 ease-in-out"
+                            d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="nav-items" class="px-4 pb-6 hidden transition-all duration-300 ease-in-out sm:block sm:pb-0 sm:my-auto">
+            <ul class="sm:flex items-center">
+                <a class="w-full h-full" href="#about">
+                    <li
+                        class="mt-4 px-2 py-1 rounded hover:bg-gray-800 hover:text-sky nav-fade-in delay-100 sm:mt-0 sm:px-6 sm:opacity-100 sm:translate-x-0 sm:delay-75">
+                        About</li>
+                </a>
+                <a href="#projects">
+                    <li
+                        class="mt-4 px-2 py-1 rounded hover:bg-gray-800 hover:text-sky nav-fade-in delay-200 sm:mt-0 sm:px-6 sm:opacity-100 sm:translate-x-0 sm:delay-75">
+                        Projects</li>
+                </a>
+                <a href="#contact">
+                    <li
+                        class="mt-4 px-2 py-1 rounded hover:bg-gray-800 hover:text-sky nav-fade-in delay-300 sm:mt-0 sm:px-6 sm:opacity-100 sm:translate-x-0 sm:delay-75">
+                        Contact</li>
+                </a>
             </ul>
-        </nav>
+        </nav>     
     </header>
 
     <main>

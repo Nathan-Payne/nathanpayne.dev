@@ -3,4 +3,19 @@
 
 /* CUSTOM COMPONENT CLASSES HERE */
 
+/* COMPLETE NAV SECTION */
+.nav-fade-in {
+	@apply opacity-0 transform translate-x-8 transition-all duration-300 ease-in-out;
+}
+.border-b-1 {
+	border-bottom: 1px solid;
+}
+.opacity-10 {
+	opacity: 0.1;
+}
+.z-5 {
+	z-index: 5;
+}
+/* END NAV SECTION */
+
 @tailwind utilities;
