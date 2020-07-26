@@ -1,11 +1,22 @@
 {
-  "name": "2020-nathanpayne.dev",
-  "version": "1.0.0",
-  "description": "Portolio website",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nathan Payne",
-  "license": "ISC"
+	"name": "2020-nathanpayne.dev",
+	"version": "1.0.0",
+	"description": "Portolio website",
+	"main": "app.js",
+	"scripts": {
+		"build-css": "postcss src/tailwind.css -o public/css/main.css",
+		"watch": "postcss src/tailwind.css -o public/css/main.css --watch",
+		"dev": "nodemon app.js"
+	},
+	"author": "Nathan Payne",
+	"license": "ISC",
+	"dependencies": {
+		"autoprefixer": "^9.8.5",
+		"ejs": "^3.1.3",
+		"express": "^4.17.1",
+		"nodemon": "^2.0.4",
+		"postcss-cli": "^7.1.1",
+		"postcss-nested": "^4.2.3",
+		"tailwindcss": "^1.5.2"
+	}
 }
