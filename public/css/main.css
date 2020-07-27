@@ -622,6 +622,10 @@ video {
 
 /* CUSTOM COMPONENT CLASSES HERE */
 
+:root {
+  scroll-behavior: smooth;
+}
+
 /* STYLING HIGHLIGHT AND SCROLLBAR IN WEBKIT SUPPORTED BROWSERS */
 
 ::-moz-selection {

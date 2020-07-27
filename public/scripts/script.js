@@ -62,3 +62,23 @@ const applyButtonExpanders = () => {
 applyButtonExpanders();
 
 //COLLAPSE END
+
+//SHRINK HEADER NAV ON SCROLL
+const header = document.querySelector('header');
+const logoText = document.querySelector('header #logo a');
+
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 30) {
+		//user not at top
+		header.classList.add('h-16');
+		header.classList.remove('h-24');
+
+		logoText.classList.add('text-base');
+	} else {
+		//user at top of page
+		header.classList.add('h-24');
+		header.classList.remove('h-16');
+
+		logoText.classList.remove('text-base');
+	}
+});

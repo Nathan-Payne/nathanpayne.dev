@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="font-mono text-lg text-cloud antialiased bg-dark">
+<body class="font-mono text-lg text-cloud antialiased bg-dark mt-24">
 
-    <header class="border-b-1 border-sky sm:flex sm:justify-between sm:text-xl xl:text-xl">
+    <header class="fixed top-0 w-screen h-24 bg-dark z-40 border-b-1 border-sky sm:flex sm:justify-between sm:text-xl transition-all duration-150 ease-in">
         <div class="tracking-wider flex justify-between items-center px-6 py-4 sm:px-8 md:ml-20">
-            <div id="logo" class="flex flex-col leading-none">
-                <span>nathan</span> <span>payne</span> <span class="mt-1 self-end text-xs uppercase">.dev</span>
+            <div id="logo" class="">
+                <a href="#" class="flex flex-col leading-none hover:text-fire transition-all duration-150 ease-in">
+                    <span>nathan</span> <span>payne</span> <span class="mt-1 self-end text-xs uppercase">.dev</span>
+                </a>
             </div>
             <div id="menu-icon" class="sm:hidden">
                 <button class="text-gray-500 hover:text-white focus:text-white focus:outline-none"
@@ -54,7 +56,7 @@
 
     <main class="relative z-10 sm:text-lg sm:px-16 lg:px-48 xl:text-xl xl:px-48">
 
-        <section id="landing" class="pt-10 pb-6 px-6 relative z-10 sm:-mx-16 md:pb-16 lg:-mx-48 xl:-mx-48">
+        <section id="landing" class="pt-8 pb-6 px-6 relative z-10 sm:-mx-16 md:pb-16 lg:-mx-48 xl:-mx-48">
             <div id="bg-image" class="absolute z-5 w-full h-full -my-10 -mx-6">
                 <img class="w-full h-full opacity-10 object-cover"
                     src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
@@ -95,7 +97,7 @@
             </div>
         </section>
 
-        <section id="about" class="bg-dark font-mav container px-5 py-12 mx-auto">
+        <section id="about" class="bg-dark font-mav container px-5 pt-16 mx-auto">
             <h1 class="text-2xl uppercase font-bold bg-gray-800 bg-opacity-50 tracking-wider md:text-4xl">About</h1>
             <p class="mt-4 md:mt-8">
                 Hello there, I am a UK based freelance web developer providing functional desktop, tablet and mobile
@@ -134,7 +136,7 @@
             </div>
         </section>
 
-        <section id="projects" class="bg-dark container font-mav px-5 pb-8 mx-auto">
+        <section id="projects" class="bg-dark container font-mav px-5 pt-16 pb-8 mx-auto">
             <h1 class="text-2xl uppercase font-bold bg-gray-800 bg-opacity-50 tracking-wider md:text-4xl">Projects</h1>
 
             <article class="py-6 flex flex-wrap md:flex-no-wrap">
