@@ -1,4 +1,4 @@
-//NAV MENU TOGGLE
+//NAV MENU TOGGLE - remove menu after click
 const menu = document.querySelector('#nav-items');
 const menuIcon = document.querySelector('#menu-icon');
 const hamSvg = document.querySelector('#ham');
@@ -6,19 +6,9 @@ const cross = document.querySelector('#cross');
 const navItems = document.querySelectorAll('#nav-items ul li');
 
 let isOpen = false;
-menuIcon.addEventListener('click', () => {
-	isOpen = !isOpen;
-	if (isOpen) {
-		menu.classList.remove('hidden');
-		cross.classList.remove('hidden');
-		menu.classList.add('block');
-		setTimeout(() => {
-			navItems.forEach((item) => {
-				item.classList.add('opacity-100', '-translate-x-px');
-			});
-		}, 30);
-		hamSvg.classList.add('hidden');
-	} else {
+
+const closeMenu = () => {
+	if (window.innerWidth < 640) {
 		navItems.forEach((item) => {
 			item.classList.remove('opacity-100', '-translate-x-px');
 		});
@@ -29,6 +19,30 @@ menuIcon.addEventListener('click', () => {
 			cross.classList.add('hidden');
 		}, 400);
 	}
+};
+
+const openMenu = () => {
+	menu.classList.remove('hidden');
+	cross.classList.remove('hidden');
+	menu.classList.add('block');
+	setTimeout(() => {
+		navItems.forEach((item) => {
+			item.classList.add('opacity-100', '-translate-x-px');
+		});
+	}, 30);
+	hamSvg.classList.add('hidden');
+};
+
+menuIcon.addEventListener('click', () => {
+	isOpen = !isOpen;
+	isOpen ? openMenu() : closeMenu();
+});
+
+navItems.forEach((item) => {
+	item.addEventListener('click', () => {
+		isOpen = !isOpen;
+		closeMenu();
+	});
 });
 // NAV MENU END
 
@@ -70,15 +84,15 @@ const logoText = document.querySelector('header #logo a');
 window.addEventListener('scroll', () => {
 	if (window.pageYOffset > 30) {
 		//user not at top
-		header.classList.add('h-16');
-		header.classList.remove('h-24');
+		header.classList.add('sm:h-16');
+		header.classList.remove('sm:h-24');
 
-		logoText.classList.add('text-base');
+		logoText.classList.add('text-sm', 'sm:text-base');
 	} else {
 		//user at top of page
-		header.classList.add('h-24');
-		header.classList.remove('h-16');
+		header.classList.add('sm:h-24');
+		header.classList.remove('sm:h-16');
 
-		logoText.classList.remove('text-base');
+		logoText.classList.remove('text-sm', 'sm:text-base');
 	}
 });
