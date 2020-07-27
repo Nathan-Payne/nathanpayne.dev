@@ -12,7 +12,7 @@
 </head>
 
 <body class="font-mono text-lg text-cloud antialiased bg-dark">
-    
+
     <header class="border-b-1 border-sky sm:flex sm:justify-between sm:text-xl xl:text-xl">
         <div class="tracking-wider flex justify-between items-center px-6 py-4 sm:px-8 md:ml-20">
             <div id="logo" class="flex flex-col leading-none">
@@ -51,8 +51,48 @@
         </nav>     
     </header>
 
-    <main>
-        <section id="landing"></section>
+    <main class="relative z-10 sm:text-lg sm:px-16 lg:px-48 xl:text-xl xl:px-48">
+        <section id="landing">
+            <section id="landing" class="pt-10 pb-6 px-6 relative z-10 sm:-mx-16 md:pb-16 lg:-mx-48 xl:-mx-48">
+                <div id="bg-image" class="absolute z-5 w-full h-full -my-10 -mx-6">
+                    <img class="w-full h-full opacity-10 object-cover"
+                        src="https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="Image of developer working">
+                </div>
+                <div id="landing-content" class="relative z-10 sm:w-4/5 xl:w-1/2 xl:ml-10">
+                    <h1
+                        class="w-full text-3xl font-bold bg-gray-800 bg-opacity-50 tracking-wider sm:ml-6 sm:text-4xl md:ml-12 md:mt-12 md:text-5xl xl:mt-8">
+                        <svg class="w-6 h-6 mr-2 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>web developer
+                    </h1>
+                    <p class="mt-10 leading-relaxed font-mav sm:ml-6 sm:text-xl md:ml-12 md:mt-10">
+                        Building anything from simple websites to fullstack apps.
+                    </p>
+                    <p class="mt-1 leading-relaxed font-mav sm:ml-6 sm:text-xl md:ml-12 md:mt-6">
+                        Let’s talk about what you need for your online business.
+                    </p>
+                    <div class="flex justify-start my-12 font-mav sm:ml-6 sm:text-lg md:ml-12 ">
+                        <a role="button"
+                            class="px-4 py-2 uppercase font-semibold border border-cloud rounded hover:bg-cloud hover:text-ocean focus:bg-sky transition ease-in-out duration-100"
+                            href="#contact">Contact Me</a>
+                        <a role="button" class="px-4 py-2 ml-4 uppercase font-semibold border border-cloud rounded 
+                                            hover:bg-cloud hover:text-ocean focus:bg-sky transition ease-in-out duration-100"
+                            href="#projects">Projects</a>
+                    </div>
+                    <div id="social" class="w-32 pt-1 flex justify-between text-2xl sm:ml-6 md:ml-12 ">
+                        <!-- SOCIAL MEDIA ICONS HERE -->
+                        <a class=" focus:bg-gray-800" href="https://github.com/Nathan-Payne"><i
+                                class="fab fa-github hover:text-fire cursor-pointer"></i></a>
+                        <a class=" focus:bg-gray-800" href=""><i class="fab fa-linkedin hover:text-fire cursor-pointer"></i></a>
+                        <a class=" focus:bg-gray-800" href="#contact"><i
+                                class="far fa-envelope hover:text-fire cursor-pointer"></i></a>
+                    </div>
+                </div>
+            </section>
+        </section>
         <section id="about"></section>
         <section id="projects">
             <article></article>
