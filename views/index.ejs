@@ -283,22 +283,23 @@
                                 class="bg-dark px-8 border border-gray-700">More details...</span></button>
                         <p class="mb-4">
                             This site is built using a node.js backend with <span class="text-highlight">Tailwind
-                                CSS</span> on the front along with some simple javascript animations.
+                                CSS</span> classes styling each element. Some simple javascript is used to animate various elements.
                         </p>
                         <p class="mb-4">
-                            Tailwind is a lower level css framework which adds more intuitive classes to the HTML but
-                            requires almost no custom CSS, no naming of custom classes, no context switching and
+                            Tailwind is a lower level css framework which adds more intuitive classes to the HTML but requires almost no custom CSS, no naming of custom classes, no context switching and
                             therefore easily reusable modular site components.
                         </p>
                         <p class="mb-4">
-                            I chose Tailwind because it prevents a large and hard to navigate css file which takes more
-                            time to work in, leads to hard to find conflicts and uneccessary css overwrites.
+                            I chose Tailwind because it prevents a large and hard to navigate css file which takes more time to work in, leads to hard to find conflicts and uneccessary css overwrites.
                         </p>
-                        <p class="mb-6">
+                        <p class="mb-4">
                             It is used here as a plugin through <span class="text-highlight">POSTcss</span> which
                             includes useful tools like <span class="text-highlight">auto-prefixer</span> (increasing
-                            browser compatability) and <span class="text-highlight">purgeCSS</span> (reducing Tailwinds
-                            final build size to < 10kb.) </p>
+                            browser compatability) and <span class="text-highlight">purgeCSS</span> (reducing Tailwinds final build size to < 10kb.) 
+                        </p>
+                        <p class="mb-6">
+                            To deploy I use <span class="text-highlight">Nginx</span> as a reverse proxy on a <span class="text-highlight">linux</span> server. This has given me familiarity with command line tools, process managers and <span class="text-highlight">SSL</span> certificates. 
+                        </p>
                     </div>
                     <h3 class="text-xl font-mono uppercase border-b-1 border-sky mb-2">Technologies</h3>
                     <ul class="text-lg mb-2">
@@ -307,6 +308,7 @@
                         <li>post-css</li>
                         <li>javascript</li>
                         <li>node.js + express</li>
+                        <li>nginx</li>
                     </ul>
                     <div class="font-mono">
                         <p class="text-fire inline-flex items-center mt-4 focus:bg-gray-800 hover:text-sky">
@@ -367,7 +369,7 @@
                     </div>
                 </form>
                 <div class="p-2 pt-4 mt-6 w-full border-t border-gray-800 text-center">
-                    <a href="#landing" class="text-sky hover:text-fire focus:outline-none focus:bg-gray-800">top
+                    <a href="#" class="text-sky hover:text-fire focus:outline-none focus:bg-gray-800">top
                         <svg class="w-6 h-6 inline-block hover:text-fire focus:bg-gray-800" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
