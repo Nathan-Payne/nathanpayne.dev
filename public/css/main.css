@@ -622,6 +622,38 @@ video {
 
 /* CUSTOM COMPONENT CLASSES HERE */
 
+/* STYLING HIGHLIGHT AND SCROLLBAR IN WEBKIT SUPPORTED BROWSERS */
+
+::-moz-selection {
+  background: #f17300;
+}
+
+::selection {
+  background: #f17300;
+}
+
+::-moz-selection {
+  background: #f17300;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171b24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #004e73;
+  border-radius: 6px;
+  border: 1px solid #171b24;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0196ce;
+}
+
 /* COMPLETE NAV SECTION */
 
 .nav-fade-in {
@@ -688,7 +720,7 @@ video {
 	transition: max-height 500ms ease-out;
 } */
 
-/* CUSTOM MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;

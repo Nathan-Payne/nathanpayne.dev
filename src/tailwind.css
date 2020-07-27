@@ -6,6 +6,29 @@
 
 /* CUSTOM COMPONENT CLASSES HERE */
 
+/* STYLING HIGHLIGHT AND SCROLLBAR IN WEBKIT SUPPORTED BROWSERS */
+::selection {
+	background: #f17300;
+}
+::-moz-selection {
+	background: #f17300;
+}
+
+::-webkit-scrollbar {
+	width: 11px;
+}
+::-webkit-scrollbar-track {
+	background: #171b24;
+}
+::-webkit-scrollbar-thumb {
+	background: #004e73;
+	border-radius: 6px;
+	border: 1px solid #171b24;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #0196ce;
+}
+
 /* COMPLETE NAV SECTION */
 .nav-fade-in {
 	@apply opacity-0 transform translate-x-8 transition-all duration-300 ease-in-out;
@@ -42,6 +65,6 @@
 	transition: max-height 500ms ease-out;
 } */
 
-/* CUSTOM MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 @tailwind utilities;
