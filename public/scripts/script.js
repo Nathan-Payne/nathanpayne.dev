@@ -31,3 +31,34 @@ menuIcon.addEventListener('click', () => {
 	}
 });
 // NAV MENU END
+
+//COLLAPSE ON PROJECT DETAILS ('technical details')
+const projectContent = document.querySelectorAll('.project-content');
+const expandButtons = document.querySelectorAll('.expand-detail');
+
+const calculateButtonExpanders = () => {
+	let contentHeight = [];
+	expandButtons.forEach((button, i) => {
+		contentHeight.push(projectContent[i].scrollHeight); //use to find height of html elements
+	});
+	return contentHeight;
+};
+
+const applyButtonExpanders = () => {
+	expandButtons.forEach((button, i) => {
+		button.addEventListener('click', () => {
+			const vals = calculateButtonExpanders();
+			if (button.innerText === 'More details...') {
+				projectContent[i].style.maxHeight = vals[i] + 'px';
+				button.innerText = 'Less details...';
+			} else if (button.innerText === 'Less details...') {
+				projectContent[i].style.maxHeight = 110 + 'px';
+				button.innerText = 'More details...';
+			}
+		});
+	});
+};
+
+applyButtonExpanders();
+
+//COLLAPSE END
