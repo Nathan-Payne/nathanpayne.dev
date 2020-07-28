@@ -1,5 +1,8 @@
 module.exports = {
-	purge: [],
+	purge: {
+		enabled: true,
+		content: [ './views/**/*.ejs', './views/*.ejs', './public/**/*.js' ]
+	},
 	theme: {
 		extend: {
 			fontFamily: {
