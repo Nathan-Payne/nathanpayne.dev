@@ -33,6 +33,20 @@
 	background: #0196ce;
 }
 
+.text-shadow {
+	color: #e6e8ee;
+	text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.btn {
+	@apply py-2 px-8 bg-sky border-0 rounded text-xl font-bold uppercase;
+}
+
+.bg-custom-grad {
+	background: rgb(0, 78, 115);
+	background: linear-gradient(351deg, rgba(0, 78, 115, 0.6) 0%, rgba(1, 150, 206, 0.94) 58%);
+}
+
 /* COMPLETE NAV SECTION */
 .nav-fade-in {
 	@apply opacity-0 transform translate-x-8 transition-all duration-300 ease-in-out;
