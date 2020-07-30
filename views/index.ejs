@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="font-mono text-lg text-cloud antialiased bg-dark mt-24">
+<body class="font-mono text-lg text-dark antialiased bg-cloud mt-24">
 
-    <header class="fixed top-0 w-screen sm:h-24 bg-dark z-40 border-b-1 border-sky sm:flex sm:justify-between sm:text-xl transition-all duration-150 ease-in">
+    <header class="fixed top-0 w-screen sm:h-24 bg-cloud z-40 border-b-1 border-sky sm:flex sm:justify-between sm:text-xl transition-all duration-150 ease-in">
         <div class="tracking-wider flex justify-between items-center px-6 py-4 sm:px-8 md:ml-20">
             <div id="logo" class="">
                 <a href="#" class="flex flex-col leading-none hover:text-fire transition-all duration-150 ease-in">
@@ -54,15 +54,15 @@
         </nav>
     </header>
 
-    <main class="relative z-10 sm:text-lg sm:px-16 lg:px-48 xl:text-xl xl:px-48">
+    <main class="relative z-10 bg-cloud sm:text-lg sm:px-16 lg:px-48 xl:text-xl xl:px-48">
 
-        <div id="bg-image" class="absolute z-5 w-full h-full -my-10 -mx-6 overflow-hidden sm:-mx-16 lg:-mx-48 xl:-mx-48">
+        <div id="bg-image" class="absolute opacity-50 z-5 w-full h-full -my-10 -mx-6 overflow-hidden sm:-mx-16 lg:-mx-48 xl:-mx-48">
             <%- include('partials/landing_svg') %>
         </div>
 
         <section id="landing" class="pt-2 pb-6 px-6 relative z-10 md:pb-16 md:pt-8">
-            <div id="landing-content" class="p-6 bg-custom-grad text-shadow rounded-lg sm:w-3/4 lg:w-2/3 xl:w-3/5">
-                <h1 class="w-full text-3xl font-bold text-shadow bg-opacity-50 tracking-wider sm:text-4xl md:text-5xl">
+            <div id="landing-content" class="p-6 bg-cloud text-dark shadow-md rounded-lg sm:w-3/4 lg:w-2/3 xl:w-3/5">
+                <h1 class="w-full text-3xl font-bold text-shadow text-dark bg-opacity-50 tracking-wider sm:text-4xl md:text-5xl">
                     <svg class="w-6 h-6 mr-2 inline-block" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
                             d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
@@ -75,14 +75,14 @@
                 <p class="mt-2 leading-relaxed font-mav  sm:text-xl md:mt-5">
                     Let’s talk about what you need for your online business.
                 </p>
-                <div class="flex flex-col justify-start my-10 font-mav sm:flex-row sm:text-lg">
+                <div class="flex flex-col justify-start my-10 font-mav text-cloud text-shadow sm:flex-row sm:text-lg">
                     <a role="button"
-                        class="btn bg-fire text-center hover:bg-dark focus:bg-sky transition ease-in-out duration-100"
+                        class="btn bg-fire text-center shadow-sm hover:bg-dark focus:bg-sky transition ease-in-out duration-100"
                         href="#contact">Contact Me</a>
-                    <a role="button" class="btn mt-3 text-center hover:bg-dark focus:bg-sky transition ease-in-out duration-100 sm:ml-6 sm:mt-0"
+                    <a role="button" class="btn mt-3 text-center shadow-sm hover:bg-dark focus:bg-sky transition ease-in-out duration-100 sm:ml-6 sm:mt-0"
                         href="#projects">Projects</a>
                 </div>
-                <div id="social" class="w-32 pt-1 flex justify-between text-2xl ">
+                <div id="social" class="w-32 pt-1 flex justify-between text-2xl">
                     <!-- SOCIAL MEDIA ICONS HERE -->
                     <a class=" focus:bg-gray-800" href="https://github.com/Nathan-Payne"><i
                             class="fab fa-github hover:text-fire cursor-pointer"></i></a>
@@ -94,8 +94,8 @@
             </div>
         </section>
 
-        <section id="about" class="bg-dark font-mav container relative z-10 px-5 mt-16 mx-auto">
-            <h1 class="text-2xl uppercase font-bold bg-gray-800 bg-opacity-50 tracking-wider md:text-4xl">About</h1>
+        <section id="about" class="bg-cloud font-mav container relative z-10 px-5 pb-20 mt-16 mx-auto shadow-md">
+            <h1 class="text-2xl uppercase font-bold tracking-wider md:text-4xl">About</h1>
             <p class="mt-4 md:mt-8">
                 Hello there, I am a UK based freelance web developer providing functional desktop, tablet and mobile
                 friendly responsive websites.
@@ -104,43 +104,39 @@
                 Let me translate that, as your developer you can expect:
             </p>
             <ul class="mt-4 md:mt-10 md:grid md:grid-cols-2 md:col-gap-20 md:row-gap-16">
-                <li class="mt-5 md:mt-0 md:col-span-2"><span class="p-1 bg-gray-800 md:block md:w-full">- Delivery of
-                        high performance websites.</span> This is my priority for several reasons: users are more likely
-                    to leave
-                    the longer a site takes to load; google ranks you higher in search results if your site is speedy;
-                    the 'feel' of your site depends on its speed and providing the best experience leads to sales,
-                    online or offline.
+                <li class="mt-5 md:mt-0 md:col-span-2"><span class="p-1 bg-gray-400 font-bold md:block md:w-full">- Delivery of
+                        high performance websites.</span> My priority: users are less likely to click away if a site loads instantly, google also ranks you higher in search results if your site is speedy.
+                    The 'feel' of your site depends on its speed and providing the best experience leads to sales, online or offline.
                 </li>
-                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-800 md:block md:w-full">- Sites looking great on all
-                        devices.</span> In 2020+ most users are viewing the web through a mobile browser so
-                    I ensure they're up to spec at these small sizes.
+                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-400 font-bold md:block md:w-full">- Responsive design</span> In 2020+ most users are viewing the web through a mobile browser so
+                    I ensure sites are up to spec at these small sizes. 
                 </li>
-                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-800 md:block md:w-full">- Your goals in mind.</span> I
+                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-400 font-bold md:block md:w-full">- Your goals in mind.</span> I
                     build with the aims of your business at the forefront, whoever your target audience is.</li>
-                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-800 md:block md:w-full">- Communication.</span> Weekly
+                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-400 font-bold md:block md:w-full">- Communication.</span> Weekly
                     updates via phone or email can be arranged so you always know how the project is progressing.</li>
-                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-800 md:block md:w-full">- Support.</span> Longer term
+                <li class="mt-5 md:mt-0"><span class="p-1 bg-gray-400 font-bold md:block md:w-full">- Support.</span> Longer term
                     support/management is an optional service provided at request.</li>
             </ul>
             <!-- <p class="mt-16 font-mono leading-tight text-sm text-right">
                 Other talents may include teaching physics, surfing and the occasional
                 unicycle ride &#x1F604;
             </p> -->
-            <div role="button" class="mt-12 flex">
-                <a href="#contact" class="btn mx-auto focus:outline-none focus:bg-white focus:text-ocean hover:bg-fire">Let's Talk</a>
+            <div role="button" class="mt-16 flex">
+                <a href="#contact" class="btn mx-auto text-3xl text-cloud text-shadow focus:outline-none focus:bg-white focus:text-ocean hover:bg-fire">Let's Talk</a>
             </div>
         </section>
 
-        <section id="projects" class="bg-dark container font-mav relative z-10 px-5 pt-20 pb-8 mx-auto">
-            <h1 class="text-2xl uppercase font-bold bg-gray-800 bg-opacity-50 tracking-wider md:text-4xl">Projects</h1>
+        <section id="projects" class="-mx-40 px-5 pb-8 mt-32 bg-white font-mav text-dark relative z-10 shadow-md rounded-lg">
+            <h1 class="text-2xl uppercase font-bold bg-opacity-50 tracking-wider md:text-4xl">Projects</h1>
             <article class="py-6 flex flex-wrap md:flex-no-wrap">
-                <div class="mb-2 flex-shrink-0 flex flex-col flex-wrap md:w-64 md:mb-0">
-                    <span class="tracking-wider font-medium text-white">Client Work</span>
+                <div class="mb-2 pr-4 flex-shrink-0 flex flex-col flex-wrap font-mono md:w-48 md:mb-0">
+                    <span class="tracking-wide font-medium text-ocean">Client Work</span>
                     <span class="text-sky text-sm">Oct 2019 - present (ongoing updates)</span>
                 </div>
                 <div class="md:flex-grow">
                     <h2 class="text-2xl font-semibold mb-2">Square Circle</h2>
-                    <div class="bg-dark">
+                    <div class="bg-cloud shadow-custom">
                         <a href="http://194.5.157.245/" target="_blank" class="">
                             <img class="my-5 hover:opacity-75" src="/images/squarecircle_1.JPG"
                                 alt="Square Circle example image">
@@ -149,7 +145,7 @@
                     <div class="project-content relative overflow-hidden pb-3 mb-6">
                         <button type="button"
                             class="expand-detail focus:outline-none focus:text-sky hover:text-fire"><span
-                                class="bg-dark px-8 border border-gray-700">More details...</span></button>
+                                class="bg-white px-8 border border-gray-700">More details...</span></button>
                         <p class="mb-4">
                             Freelance project implementing a bespoke design.
                             The primary challenges on this project were a large number of high quality images loading in
@@ -178,7 +174,7 @@
                     </ul>
                     <div class="font-mono">
                         <a href="http://194.5.157.245/"
-                            class="text-fire inline-flex items-center mt-4 focus:bg-gray-800 hover:text-sky">
+                            class="text-fire inline-flex items-center mt-4 font-bold focus:bg-gray-800 hover:text-sky">
                             live site
                             <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -187,7 +183,7 @@
                             </svg>
                         </a>
                         <a href="https://github.com/Nathan-Payne/Square-Circle"
-                            class="text-fire inline-flex items-center mt-4 ml-6 focus:bg-gray-800 hover:text-sky">
+                            class="text-fire inline-flex items-center mt-4 ml-6 font-bold focus:bg-gray-800 hover:text-sky">
                             view code
                             <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -200,8 +196,8 @@
             </article>
 
             <article class="py-6 flex flex-wrap border-t border-gray-800 md:flex-no-wrap">
-                <div class="mb-2 flex-shrink-0 flex flex-col md:w-64 md:mb-0">
-                    <span class="tracking-wider font-medium text-white">Personal Project</span>
+                <div class="mb-2 pr-4 flex-shrink-0 flex flex-col font-mono md:w-48 md:mb-0">
+                    <span class="tracking-wide font-medium text-ocean">Personal Project</span>
                     <span class="text-sky text-sm">July 6th - 17th 2019</span>
                 </div>
                 <div class="md:flex-grow">
@@ -212,7 +208,7 @@
                     <div class="project-content relative overflow-hidden pb-3 mb-6">
                         <button type="button"
                             class="expand-detail focus:outline-none focus:text-sky hover:text-fire"><span
-                                class="bg-dark px-8 border border-gray-700">More details...</span></button>
+                                class="bg-white px-8 border border-gray-700">More details...</span></button>
                         <p class="mb-4">
                             Refactoring a mock e-commerce app built from "The Modern Javascript Bootcamp" 2019. The
                             purpose of the extension was to solidfy use of HTML/CSS features including <span
@@ -249,7 +245,7 @@
                             </svg>
                         </a> -->
                         <a href="https://github.com/Nathan-Payne/PRNT_ecommerce"
-                            class="mt-4 text-fire inline-flex items-center focus:bg-gray-800 hover:text-sky">
+                            class="mt-4 text-fire inline-flex items-center font-bold focus:bg-gray-800 hover:text-sky">
                             view code
                             <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -262,8 +258,8 @@
             </article>
 
             <article class="py-6 flex flex-wrap border-t border-gray-800 md:flex-no-wrap">
-                <div class="mb-2 flex-shrink-0 flex flex-col md:w-64 md:mb-0">
-                    <span class="tracking-wider font-medium text-white">Personal Project</span>
+                <div class="mb-2 pr-4 flex-shrink-0 flex flex-col font-mono md:w-48 md:mb-0">
+                    <span class="tracking-wide font-medium text-ocean">Personal Project</span>
                     <span class="text-sky text-sm">July 23rd - 28th 2020</span>
                 </div>
                 <div class="md:flex-grow">
@@ -274,7 +270,7 @@
                     <div class="project-content relative overflow-hidden pb-3 mb-6">
                         <button type="button"
                             class="expand-detail focus:outline-none focus:text-sky hover:text-fire"><span
-                                class="bg-dark px-8 border border-gray-700">More details...</span></button>
+                                class="bg-white px-8 border border-gray-700">More details...</span></button>
                         <p class="mb-4">
                             This site is built using a node.js backend with <span class="text-highlight">Tailwind
                                 CSS</span> classes styling each element. Some simple javascript is used to animate various elements.
@@ -305,16 +301,11 @@
                         <li>nginx</li>
                     </ul>
                     <div class="font-mono">
-                        <p class="text-fire inline-flex items-center mt-4 focus:bg-gray-800 hover:text-sky">
-                            you're on it!
-                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
+                        <p class="text-fire font-bold inline-flex items-center mt-4 focus:bg-gray-800 hover:text-sky">
+                            It's this website <<
                         </p>
                         <a href="https://github.com/Nathan-Payne/"
-                            class="mt-4 ml-6 text-fire inline-flex items-center focus:bg-gray-800 hover:text-sky">
+                            class="mt-4 ml-6 text-fire inline-flex items-center font-bold focus:bg-gray-800 hover:text-sky">
                             view code
                             <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">

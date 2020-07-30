@@ -680,8 +680,18 @@ video {
 
 .bg-custom-grad {
   background: rgb(0, 78, 115);
-  background: linear-gradient(351deg, rgba(0, 78, 115, 0.6) 0%, rgba(1, 150, 206, 0.94) 58%);
+  background: linear-gradient(351deg, rgba(0, 78, 115, 0.5) 0%, rgba(1, 150, 206, 0.94) 58%);
 }
+
+.shadow-custom {
+  box-shadow: 1px 1px 6px 2px rgba(153, 153, 153, 0.7);
+  transition: 200ms all ease-in-out;
+}
+
+.shadow-custom:hover {
+    box-shadow: 1px 1px 12px 6px rgba(153, 153, 153, 0.5);
+    transition: 200ms all ease-in-out;
+  }
 
 /* COMPLETE NAV SECTION */
 
@@ -735,7 +745,7 @@ video {
   justify-content: center;
   left: 0;
   bottom: -0.5rem;
-  background-image: linear-gradient(0deg, #171b24, #171b24 40%, rgba(0, 0, 150, 0));
+  background-image: linear-gradient(0deg, #fff, #fff 40%, rgba(0, 0, 150, 0));
 }
 
 .project-content {
