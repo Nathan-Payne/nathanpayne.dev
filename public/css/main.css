@@ -660,6 +660,80 @@ video {
   background: #0196ce;
 }
 
+/* STYLING SVG BACKGROUND */
+
+#Whangaehu path {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 450;
+  /* animation: dash 20s alternate forwards; */
+}
+
+#Whangaehu path:nth-child(even) {
+  opacity: 30%;
+  -webkit-animation: unglow 10s alternate infinite, dash 10s ease-out alternate infinite;
+          animation: unglow 10s alternate infinite, dash 10s ease-out alternate infinite;
+}
+
+#Whangaehu path:nth-child(odd) {
+  opacity: 70%;
+  -webkit-animation: glow 10s alternate infinite, dash 20s ease-in alternate infinite;
+          animation: glow 10s alternate infinite, dash 20s ease-in alternate infinite;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    opacity: 70%;
+  }
+
+  100% {
+    opacity: 30%;
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 70%;
+  }
+
+  100% {
+    opacity: 30%;
+  }
+}
+
+@-webkit-keyframes unglow {
+  0% {
+    opacity: 30%;
+  }
+
+  100% {
+    opacity: 70%;
+  }
+}
+
+@keyframes unglow {
+  0% {
+    opacity: 30%;
+  }
+
+  100% {
+    opacity: 70%;
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* STYLING SVG BACKGROUND END*/
+
 .text-shadow {
   color: #e6e8ee;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
