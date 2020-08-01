@@ -8,7 +8,7 @@ const navItems = document.querySelectorAll('#nav-items ul li');
 let isOpen = false;
 
 const closeMenu = () => {
-	if (window.innerWidth < 640) {
+	if (document.body.clientWidth < 640) {
 		navItems.forEach((item) => {
 			item.classList.remove('opacity-100', '-translate-x-px');
 		});

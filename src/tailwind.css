@@ -8,6 +8,8 @@
 
 :root {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+	touch-action: manipulation;
 }
 
 /* STYLING HIGHLIGHT AND SCROLLBAR IN WEBKIT SUPPORTED BROWSERS */
