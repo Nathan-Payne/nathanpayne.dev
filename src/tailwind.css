@@ -22,10 +22,10 @@
 	width: 11px;
 }
 ::-webkit-scrollbar-track {
-	background: #171b24;
+	background: #e6e8ee;
 }
 ::-webkit-scrollbar-thumb {
-	background: #004e73;
+	background: #e6e8ee;
 	border-radius: 6px;
 	border: 1px solid #171b24;
 }
@@ -40,6 +40,7 @@
 
 .btn {
 	@apply py-2 px-8 bg-sky border-0 rounded text-xl font-bold uppercase;
+	max-width: 15rem;
 }
 
 .bg-custom-grad {
@@ -93,6 +94,21 @@
 	transition: max-height 500ms ease-out;
 } */
 
+.text-direction-vert {
+	transform-origin: 0 0;
+	transform: rotate(0deg);
+}
+.top-250 {
+	top: 250px;
+}
+
 /* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+	.text-direction-vert {
+		transform-origin: 0 0;
+		transform: rotate(270deg);
+	}
+}
 
 @tailwind utilities;
