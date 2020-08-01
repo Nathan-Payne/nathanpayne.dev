@@ -24,9 +24,7 @@ To deploy I use Nginx as a reverse proxy on a linux server. This required comman
 This project was worked on part-time for about a week
 
 ## Tasks to complete
-- Use of more prominent color to break apart sections 
-- Greater distinction between typographies
-- increase image size / use a gif or modal showing projects
-- increase column size when describing projects
-- animated svg on landing replacing background image
-- 
+- use a gif or modal to show projects
+- hook up nodemailer/emailjs to contact form 
+- link to linked-in 
+- Host PRNT project and activate link to it
