@@ -25,6 +25,5 @@ This project was worked on part-time for about a week
 
 ## Tasks to complete
 - use a gif or modal to show projects
-- hook up nodemailer/emailjs to contact form 
 - link to linked-in 
 - Host PRNT project and activate link to it
