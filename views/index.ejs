@@ -9,6 +9,29 @@
         content="Freelance web developer building the front and backends of online business in the UK">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('user_3ZA63LlJVcLX4yKvKnU8Y');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('gmail', 'nathanpayne_dev', '#contact-form', 'user_3ZA63LlJVcLX4yKvKnU8Y')
+                .then(function (res) {
+                        console.log('SUCCESS!', res.status, res.text);
+                    }, function (err) {
+                        console.log('FAILED...', err);
+                    });
+                    document.getElementById('contact-form').reset();
+                    document.querySelector('#contact').classList.remove('bg-sky');
+                    document.querySelector('#contact').classList.add('bg-green-500');
+                    document.querySelector('#success-msg').classList.remove('hidden');
+            });
+        }
+    </script>
 </head>
 
 <body class="mt-24 bg-white font-mono text-lg text-dark antialiased">
@@ -328,24 +351,28 @@
                 </p>
             </div>
             <div class="mx-auto md:w-2/3">
-                <form class="flex flex-wrap" aria-label="Contact Form">
+                <form id="contact-form" class="flex flex-wrap" aria-label="Contact Form">
                     <div class="p-2 w-full sm:w-1/2">
                         <label for="name">Name</label>
                         <input id="name" name="name" autocomplete="given-name"
-                            class="w-full px-4 py-2 mt-1 rounded border border-gray-700 focus:outline-none focus:border-sky"
-                            type="text">
+                            class="w-full px-4 py-2 mt-1 text-dark rounded border border-gray-700 focus:outline-none focus:border-sky"
+                            type="text" required>
                     </div>
                     <div class="p-2 w-full sm:w-1/2">
                         <label for="email">E-mail</label>
                         <input id="email" name="email" autocomplete="email"
-                            class="w-full px-4 py-2 mt-1 rounded border border-gray-700 focus:outline-none focus:border-sky"
-                            type="email">
+                            class="w-full px-4 py-2 mt-1 text-dark rounded border border-gray-700 focus:outline-none focus:border-sky"
+                            type="email" required>
                     </div>
                     <div class="p-2 w-full">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" autocomplete="off"
-                            class="w-full h-48 px-4 py-2 mt-1 rounded border border-gray-700 focus:outline-none focus:border-sky resize-none block"
-                            placeholder=""></textarea>
+                            class="w-full h-48 px-4 py-2 mt-1 text-dark rounded border border-gray-700 focus:outline-none focus:border-sky resize-none block"
+                            placeholder="" required></textarea>
+                    </div>
+                    <div id="success-msg" class="p-4 mt-4 bg-white text-noshadow text-dark font-mav border border-gray-200 rounded-lg transition duration-200 ease-in-out hidden">
+                        Looking forward to working with you! I aim to respond within a couple of days but feel free to contact me on Linkedin if you haven't heard
+                        anything.
                     </div>
                     <div class="p-2 mt-4 w-full">
                         <button type="submit"
@@ -353,6 +380,7 @@
                             </button>
                     </div>
                 </form>
+
                 <div class="p-2 pt-4 mt-6 w-full border-t border-white text-center">
                     <a href="#" class="text-white hover:bg-cloud hover:text-dark focus:outline-none focus:text-ocean">top
                         <svg class="w-6 h-6 inline-block" fill="currentColor"

@@ -1,3 +1,20 @@
+//DETECT FIREFOX - DISABLE SVG ANIMATION - PERFORMANCE ON FIREFOX
+let isFirefox = typeof InstallTrigger !== 'undefined';
+if (isFirefox) {
+	document.querySelectorAll('#Whangaehu path').forEach((path, i) => {
+		if (i % 2 === 0 || i % 3 === 0) {
+			path.style.animation = 'none';
+			path.classList.add('hidden');
+		}
+		if (i % 5 === 0 || i % 7 === 0) {
+			path.style.animation = 'none';
+			path.classList.add('hidden');
+		}
+	});
+} else {
+	console.log('not a fox');
+}
+
 //NAV MENU TOGGLE - remove menu after click
 const menu = document.querySelector('#nav-items');
 const menuIcon = document.querySelector('#menu-icon');
