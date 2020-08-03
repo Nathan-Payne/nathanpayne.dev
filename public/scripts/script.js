@@ -11,8 +11,6 @@ if (isFirefox) {
 			path.classList.add('hidden');
 		}
 	});
-} else {
-	console.log('not a fox');
 }
 
 //NAV MENU TOGGLE - remove menu after click

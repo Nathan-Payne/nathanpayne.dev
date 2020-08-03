@@ -36,7 +36,7 @@
 
 <body class="mt-24 bg-white font-mono text-lg text-dark antialiased">
 
-    <header class="fixed top-0 w-screen sm:h-24 bg-white z-40 border-b-1 border-sky sm:flex sm:justify-between sm:text-xl transition-all duration-150 ease-in">
+    <header class="fixed top-0 w-screen sm:h-24 bg-white z-40 border-b-1 border-sky sm:flex sm:justify-between sm:text-xl transition-all duration-150 ease-in 2xl:text-3xl">
         <div class="tracking-wider flex justify-between items-center px-6 py-4 sm:px-8 md:ml-20">
             <div id="logo" class="">
                 <a href="#" class="flex flex-col leading-none hover:text-fire focus:text-fire focus:outline-none transition-all duration-150 ease-in">
@@ -77,35 +77,33 @@
         </nav>
     </header>
 
-    <main class="container mx-auto relative z-10 bg-white sm:text-lg sm:px-12 lg:px-16 xl:text-xl xl:px-24">
+    <%- include('partials/landing_svg') %>
 
-        <div id="bg-image" class="absolute left-0 z-5 h-full -my-10 -mx-6 sm:-mx-16 lg:-mx-32 xl:-mx-48">
-            <%- include('partials/landing_svg') %>
-        </div>
+    <main class="container mx-auto relative z-10 sm:text-lg sm:px-12 lg:px-16 xl:text-xl xl:px-24 2xl:text-2xl">
 
         <section id="landing" class="pt-2 pb-6 px-6 relative z-10 md:pb-16 md:pt-8 xl:pt-24">
             <div id="landing-content" class="w-11/12 mx-auto p-6 bg-white text-dark shadow-md rounded-lg lg:w-3/4 xl:w-3/5">
-                <h1 class="w-full text-3xl font-bold text-shadow text-dark bg-opacity-50 tracking-wider sm:text-4xl lg:text-5xl">
+                <h1 class="w-full text-3xl font-bold text-shadow text-dark bg-opacity-50 tracking-wider sm:text-4xl lg:text-5xl 2xl:text-6xl">
                     <svg class="w-6 h-6 mr-2 inline-block" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
                             d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
                             clip-rule="evenodd"></path>
                     </svg>web developer
                 </h1>
-                <p class="mt-6 leading-relaxed font-mav lg:text-xl md:mt-8">
+                <p class="mt-6 leading-relaxed font-mav lg:text-xl md:mt-8 2xl:text-3xl">
                     Building anything from simple websites to fullstack apps.
                 </p>
-                <p class="mt-2 leading-relaxed font-mav  sm:text-xl md:mt-5">
+                <p class="mt-2 leading-relaxed font-mav  sm:text-xl md:mt-5 2xl:text-3xl">
                     Let’s talk about what you need for your online business.
                 </p>
                 <div class="flex flex-col justify-start my-10 font-mav text-white text-shadow sm:text-lg md:flex-row">
                     <a role="button"
-                        class="btn bg-fire text-center shadow-sm hover:bg-dark focus:bg-sky transition ease-in-out duration-100"
+                        class="btn bg-fire text-center shadow-sm hover:bg-dark focus:bg-sky transition ease-in-out duration-100 2xl:text-2xl"
                         href="#contact">Contact Me</a>
-                    <a role="button" class="btn mt-3 text-center shadow-sm hover:bg-dark focus:bg-sky transition ease-in-out duration-100 md:ml-6 md:mt-0"
+                    <a role="button" class="btn mt-3 text-center shadow-sm hover:bg-dark focus:bg-sky transition ease-in-out duration-100 md:ml-6 md:mt-0 2xl:text-2xl"
                         href="#projects">Projects</a>
                 </div>
-                <div id="social" class="w-32 pt-1 flex justify-between text-2xl">
+                <div id="social" class="w-32 pt-1 flex justify-between text-2xl xl:w-40 2xl:text-4xl">
                     <!-- SOCIAL MEDIA ICONS HERE -->
                     <a class=" focus:bg-cloud" href="https://github.com/Nathan-Payne"><i
                             class="fab fa-github hover:text-fire cursor-pointer"></i></a>
@@ -117,8 +115,8 @@
             </div>
         </section>
 
-        <section id="about" class="bg-white font-mav relative z-10 px-12 pb-20 pt-10 mx-auto mt-20 shadow-lg rounded-lg lg:w-10/12">
-            <h1 class="py-3 text-2xl uppercase font-bold tracking-wider border-b border-gray-800 md:text-4xl">About</h1>
+        <section id="about" class="bg-white font-mav relative z-10 px-12 pb-20 pt-10 mx-auto mt-20 shadow-lg rounded-lg lg:w-10/12 2xl:text-3xl">
+            <h1 class="py-3 text-2xl uppercase font-bold tracking-wider border-b border-gray-800 md:text-4xl 2xl:text-5xl">About</h1>
             <p class="mt-4 md:mt-8">
                 Hello there, I am a UK based freelance web developer providing functional desktop and mobile
                 friendly responsive websites.
@@ -146,26 +144,26 @@
                 unicycle ride &#x1F604;
             </p> -->
             <div role="button" class="mt-16 flex">
-                <a href="#contact" class="btn mx-auto text-3xl text-white text-shadow focus:outline-none focus:bg-white focus:text-ocean hover:bg-fire">Let's Talk</a>
+                <a href="#contact" class="btn mx-auto text-3xl text-white text-shadow focus:outline-none focus:bg-white focus:text-ocean hover:bg-fire 2xl:text-4xl 2xl:max-w-6xl">Let's Talk</a>
             </div>
         </section>
 
         <section id="projects" class="w-full px-5 pb-8 pt-10 mt-24 bg-white font-mav text-dark relative z-10 shadow-lg rounded-lg">
-            <h1 class="py-4 text-2xl uppercase font-bold bg-opacity-50 tracking-wider md:text-4xl">Projects</h1>
+            <h1 class="py-4 text-2xl uppercase font-bold bg-opacity-50 tracking-wider md:text-4xl 2xl:text-5xl">Projects</h1>
             <article class="py-6 border-t border-gray-800 flex flex-wrap md:flex-no-wrap xl:mb-8">
                 <div class="mb-2 pr-4 relative flex flex-col flex-wrap font-mono md:w-32 md:mb-0 md:flex-shrink-0">
                     <span class="tracking-wide font-medium text-ocean">Client Work</span>
                     <span class="w-48 md:absolute top-250 text-sky text-sm text-direction-vert">Oct 2019 - present (ongoing updates)</span>
                 </div>
                 <div class="md:flex-grow">
-                    <h2 class="text-2xl font-semibold mb-2">Square Circle</h2>
+                    <h2 class="text-2xl font-semibold mb-2 2xl:text-4xl">Square Circle</h2>
                     <div class="bg-cloud shadow-custom">
                         <a href="http://194.5.157.245/" target="_blank" class="">
                             <img class="my-5 hover:opacity-75" src="/images/squarecircle_1.JPG"
                                 alt="Square Circle example image">
                         </a>
                     </div>
-                    <div class="project-content relative overflow-hidden pb-3 mb-10">
+                    <div class="project-content relative overflow-hidden pb-3 mb-10 2xl:text-3xl">
                         <button type="button"
                             class="expand-detail focus:outline-none focus:text-sky hover:text-fire"><span
                                 class="bg-white px-8 border border-dark sm:px-24">More details...</span></button>
@@ -186,8 +184,8 @@
                             less time. See the github for a few examples.
                         </p>
                     </div>
-                    <h3 class="text-xl font-mono font-bold uppercase border-b-1 border-sky mb-2">Technologies</h3>
-                    <ul class="text-lg mb-2">
+                    <h3 class="text-xl font-mono font-bold uppercase border-b-1 border-sky mb-2 2xl:text-3xl">Technologies</h3>
+                    <ul class="text-lg mb-2 2xl:text-3xl">
                         <li>html (via ejs templating)</li>
                         <li>css</li>
                         <li>javascript</li>
@@ -195,7 +193,7 @@
                         <li>mongodb</li>
                         <li>cloudinary api</li>
                     </ul>
-                    <div class="font-mono text-2xl mt-8">
+                    <div class="font-mono text-2xl mt-8 2xl:text-3xl">
                         <a href="http://194.5.157.245/"
                             class="text-fire inline-flex items-center font-bold hover:bg-cloud hover:text-sky focus:bg-cloud">
                             live site
@@ -224,11 +222,11 @@
                     <span class="w-48 md:absolute top-250 text-sky text-sm text-direction-vert">July 6th - 17th 2019</span>
                 </div>
                 <div class="md:flex-grow">
-                    <h2 class="text-2xl font-semibold mb-2">PRNT E-commerce Mockup</h2>
+                    <h2 class="text-2xl font-semibold mb-2 2xl:text-4xl">PRNT E-commerce Mockup</h2>
                     <a class="bg-cloud" target="_blank" href="/images/prnt_1.jpg">
                         <img class="my-5 shadow-custom" src="/images/prnt_1.JPG" alt="PRNT e-commerce example image">
                     </a>
-                    <div class="project-content relative overflow-hidden pb-3 mb-10">
+                    <div class="project-content relative overflow-hidden pb-3 mb-10 2xl:text-3xl">
                         <button type="button"
                             class="expand-detail focus:outline-none focus:text-sky hover:text-fire"><span
                                 class="bg-white px-8 border border-dark sm:px-24">More details...</span></button>
@@ -251,8 +249,8 @@
                                 class="text-highlight">form validation</span>.
                         </p>
                     </div>
-                    <h3 class="text-xl font-mono font-bold uppercase border-b-1 border-sky mb-2">Technologies</h3>
-                    <ul class="text-lg mb-2">
+                    <h3 class="text-xl font-mono font-bold uppercase border-b-1 border-sky mb-2 2xl:text-3xl">Technologies</h3>
+                    <ul class="text-lg mb-2 2xl:text-3xl">
                         <li>html</li>
                         <li>css</li>
                         <li>javascript</li>
@@ -268,7 +266,7 @@
                             </svg>
                         </a> -->
                         <a href="https://github.com/Nathan-Payne/PRNT_ecommerce"
-                            class="text-fire inline-flex items-center font-bold hover:bg-cloud hover:text-sky focus:bg-cloud">
+                            class="text-fire inline-flex items-center font-bold hover:bg-cloud hover:text-sky focus:bg-cloud 2xl:text-4xl">
                             view code
                             <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -286,11 +284,11 @@
                     <span class="w-48 text-sky text-sm md:absolute top-250 text-direction-vert">July 23rd - 28th 2020</span>
                 </div>
                 <div class="md:flex-grow">
-                    <h2 class="text-2xl font-semibold mb-2">Personal Portfolio V1</h2>
+                    <h2 class="text-2xl font-semibold mb-2 2xl:text-4xl">Personal Portfolio V1</h2>
                     <div class="bg-cloud shadow-custom">
                         <img class="my-5" src="/images/portfolio_1.JPG" alt="Javascript code example">
                     </div>
-                    <div class="project-content relative overflow-hidden pb-3 mb-10">
+                    <div class="project-content relative overflow-hidden pb-3 mb-10 2xl:text-3xl">
                         <button type="button"
                             class="expand-detail focus:outline-none focus:text-sky hover:text-fire"><span
                                 class="bg-white px-8 border border-dark sm:px-24">More details...</span></button>
@@ -314,8 +312,8 @@
                             To deploy I use <span class="text-highlight">Nginx</span> as a reverse proxy on a <span class="text-highlight">linux</span> server. This has given me familiarity with command line tools, process managers and <span class="text-highlight">SSL</span> certificates. 
                         </p>
                     </div>
-                    <h3 class="text-xl font-mono font-bold uppercase border-b-1 border-sky mb-2">Technologies</h3>
-                    <ul class="text-lg mb-2">
+                    <h3 class="text-xl font-mono font-bold uppercase border-b-1 border-sky mb-2 2xl:text-3xl">Technologies</h3>
+                    <ul class="text-lg mb-2 2xl:text-3xl">
                         <li>html</li>
                         <li>tailwind css</li>
                         <li>post-css</li>
@@ -324,11 +322,11 @@
                         <li>nginx</li>
                     </ul>
                     <div class="font-mono text-2xl mt-8">
-                        <p class="text-fire font-bold inline-flex items-center mt-4 hover:bg-cloud hover:text-sky focus:bg-cloud">
+                        <p class="text-fire font-bold inline-flex items-center mt-4 hover:bg-cloud hover:text-sky focus:bg-cloud 2xl:text-4xl">
                             It's this website <<
                         </p>
                         <a href="https://github.com/Nathan-Payne/"
-                            class="text-fire inline-flex items-center font-bold hover:bg-cloud hover:text-sky focus:bg-cloud sm:ml-6">
+                            class="text-fire inline-flex items-center font-bold hover:bg-cloud hover:text-sky focus:bg-cloud sm:ml-6 2xl:text-4xl">
                             view code
                             <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -342,10 +340,10 @@
 
         </section>
 
-        <section role="form" id="contact" class="w-full px-16 pt-12 pb-6 my-20 mx-auto bg-sky shadow-lg rounded-lg text-white text-shadow relative z-10 lg:text-xl lg:w-4/6"
+        <section role="form" id="contact" class="w-full px-16 pt-12 pb-6 my-20 mx-auto bg-sky shadow-lg rounded-lg text-white text-shadow relative z-10 lg:text-xl lg:w-4/6 2xl:text-3xl"
             aria-label="Contact Information">
             <div class="flex flex-col text-center w-full mb-6">
-                <h1 class="py-2 mb-2 text-2xl font-bold border-b border-t border-white tracking-wider md:text-4xl">Contact</h1>
+                <h1 class="py-2 mb-2 text-2xl font-bold border-b border-t border-white tracking-wider md:text-4xl 2xl:text-6xl">Contact</h1>
                 <p class="mx-auto pt-2 leading-relaxed lg:w-2/3">
                     Get in touch for a free quote. 
                 </p>
@@ -376,7 +374,7 @@
                     </div>
                     <div class="p-2 mt-4 w-full">
                         <button type="submit"
-                            class="btn bg-fire mx-auto text-white text-shadow flex border border-dark shadow-lg focus:bg-white focus:text-ocean hover:bg-white hover:text-ocean">send
+                            class="btn bg-fire mx-auto text-white text-shadow flex border border-dark shadow-lg focus:bg-white focus:text-ocean hover:bg-white hover:text-ocean 2xl:text-4xl">send
                             </button>
                     </div>
                 </form>

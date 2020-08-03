@@ -1,12 +1,15 @@
 module.exports = {
 	purge: {
-		enabled: true,
+		enabled: false,
 		content: [ './views/**/*.ejs', './views/*.ejs', './public/**/*.js' ]
 	},
 	theme: {
 		extend: {
 			fontFamily: {
 				mav: [ 'Maven Pro' ]
+			},
+			screens: {
+				'2xl': '1900px'
 			},
 			spacing: {
 				'1/2': '50%',
