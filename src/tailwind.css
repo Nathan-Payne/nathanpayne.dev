@@ -153,8 +153,13 @@
 	transform-origin: 0 0;
 	transform: rotate(0deg);
 }
-.top-250 {
+.date-spacing {
 	top: 250px;
+}
+@media (min-width: 1920px) {
+	.date-spacing {
+		top: 320px;
+	}
 }
 
 /* MEDIA QUERIES */

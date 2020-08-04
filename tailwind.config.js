@@ -9,7 +9,7 @@ module.exports = {
 				mav: [ 'Maven Pro' ]
 			},
 			screens: {
-				'2xl': '1900px'
+				'2xl': '1950px'
 			},
 			spacing: {
 				'1/2': '50%',

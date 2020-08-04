@@ -24,5 +24,6 @@ To deploy I use Nginx as a reverse proxy on a linux server. This required comman
 This project was worked on part-time for about a week
 
 ## Tasks to complete
-- link to linked-in 
+- 
+- add stop button for moving images
 - Host PRNT project and activate link to it

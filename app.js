@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
+app.get('/CV', (req, res) => {
+	res.render('CV_2020');
+});
+
 app.listen(port, () => {
 	console.log(`====Listening on port ${port}====`);
 });
