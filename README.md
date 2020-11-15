@@ -1,6 +1,6 @@
 # nathanpayne.dev V1 (OLD)
 
-Portfolio showcasing some of my work. I have updated this at [https://nathanpayne.dev](nathanpayne.dev)
+Portfolio showcasing some of my work. I have updated this at [nathanpayne.dev](https://nathanpayne.dev)
 
 ## Technologies
 
